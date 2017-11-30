@@ -26,4 +26,13 @@ describe HaversineDistance do
       it { expect(described_class.m(point1[0], point1[1], point2[0], point2[1]).round(2)).to eql(3453.66) }
     end
   end
+
+  describe '.miles' do
+    let(:point1) { [ -0.141833514017446, 51.4956699956174 ] }
+    let(:point2) { [ -0.171055, 51.485144 ] }
+
+    context 'when lat-long for both points are not same' do
+      it { expect(described_class.miles(point1[0], point1[1], point2[0], point2[1]).round(2)).to eql(2.14) }
+    end
+  end
 end

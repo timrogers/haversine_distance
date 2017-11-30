@@ -1,10 +1,8 @@
 require './lib/haversine_distance/version'
 
-
 Gem::Specification.new do |s|
   s.name = 'haversine_distance_c'
   s.version = HaversineDistance::VERSION
-  s.date = Date.today.to_s
   s.summary = 'C calculation of the Haversine Distance'
   s.description = 'Calculates the distance between two points using the haversine distance'
   s.authors = ['Ivan Pirlik']
